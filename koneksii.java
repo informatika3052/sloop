@@ -22,10 +22,10 @@ public class koneksii {
         if (connection==null){
             try {
                 Class.forName("com.mysql.jdbc.Driver");
-                connection = DriverManager.getConnection("jdbc:mysql://localhost/project_pbooo","root","");
+                connection = DriverManager.getConnection("jdbc:mysql://localhost/nama_file_database","root","");
                  JOptionPane.showMessageDialog(null,"KONEKSI BERHASIL");
             } catch (Exception e) {
-                System.out.println("error di sini juga");
+                System.out.println("KONEKSI TIDAK BERHASIL");
                 e.printStackTrace();
                 return null;
             }
